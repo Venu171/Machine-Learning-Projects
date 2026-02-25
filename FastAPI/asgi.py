@@ -33,7 +33,7 @@ async def apprwm(scope,receive,send):
     })
 # Now we are running the main module
 # if this module app is from the same page then
-# asgi:app takes the module app from adgi file
+# `asgi:app` takes the module app from `asgi` file
 # run on port 5000.
 if __name__ == "__main__":
     uvicorn.run("asgi:apprwm", port=5000, log_level="info")
